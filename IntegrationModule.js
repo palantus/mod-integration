@@ -43,11 +43,11 @@ IntegrationModule.prototype.onMessage = function (req, callback) {
 			}
 
 			Spreadsheet.load({
-					debug:true,
+					//debug:true,
 					spreadsheetId: req.body.sheet,
     				worksheetId: 'od6',
-				    username: "ahk005@gmail.com",
-				    password: 'w27110723'
+				    username: req.body.username,
+				    password: req.body.password
 		    	},
 				function sheetReady(err, spreadsheet) {
 					if(err){
