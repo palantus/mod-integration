@@ -46,8 +46,8 @@ IntegrationModule.prototype.onMessage = function (req, callback) {
 					debug:true,
 					spreadsheetId: req.body.sheet,
     				worksheetId: 'od6',
-				    username: "",
-				    password: ''
+				    username: req.body.username,
+				    password: req.body.password
 		    	},
 				function sheetReady(err, spreadsheet) {
 					if(err){
