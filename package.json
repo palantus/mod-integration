@@ -1,0 +1,8 @@
+{
+	"name": "ahk-mod-integration",
+	"version": "1.0.0",
+	"dependencies" : {
+		"edit-google-spreadsheet" : "*",
+		"request" : "*"
+	}
+}
